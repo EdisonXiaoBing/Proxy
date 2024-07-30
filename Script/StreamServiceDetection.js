@@ -318,4 +318,3 @@ panel_result['content'] = content
             reject('Timeout')
           }, delay)
         })
-     
