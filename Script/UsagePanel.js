@@ -27,12 +27,12 @@
       } else if (resetDayLeft) {
         content.push(`Data will expire in ${resetDayLeft} days`);
       } else if (expireDaysLeft) {
-        content.push(`VPN will expire in ${expireDaysLeft} days`);
+        content.push(`Expire: ${expireDaysLeft} days`);
       }
       
       // 到期时间（日期）显示
       if (expireDaysLeft) {
-        content.push(`Expire：${formatTime(args.expire || info.expire)}`);
+        content.push(`Date：${formatTime(args.expire || info.expire)}`);
       }
     }
   
@@ -151,5 +151,7 @@
     let year = dateObj.getFullYear();
     let month = dateObj.getMonth() + 1;
     let day = dateObj.getDate();
-    return year + "/" + month + "/" + day + "/";
+    if (month < 10)month = "0" + month;
+    if (day < 10)day = "0" + day;
+    return year + " / " + month + " / " + day + " / ";
   }
