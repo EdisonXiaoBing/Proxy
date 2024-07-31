@@ -27,12 +27,12 @@
       } else if (resetDayLeft) {
         content.push(`Data will expire in ${resetDayLeft} days`);
       } else if (expireDaysLeft) {
-        content.push(`Expire：${expireDaysLeft} days`);
+        content.push(`Expire：  ${expireDaysLeft} days`);
       }
       
       // 到期时间（日期）显示
       if (expireDaysLeft) {
-        content.push(`Date： ${formatTime(args.expire || info.expire)}`);
+        content.push(`Date：  ${formatTime(args.expire || info.expire)}`);
       }
     }
   
