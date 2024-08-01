@@ -1,9 +1,0 @@
-#!name=Stream Service Detection
-#!desc=Netflix, Disney+, YouTube Availability Detection
-#!system=ios
-#!category=Panel
-[Panel]
-stream-all = script-name=stream-all, title="Stream Service Detection", content="Please refresh panel", update-interval=3600
-
-[Script]
-stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/EdisonXiaoBing/Surge/main/Script/StreamServiceDetection.js
