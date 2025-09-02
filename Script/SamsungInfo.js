@@ -6,15 +6,20 @@ function flattenKeys(obj) {
     if (typeof obj !== 'object' || obj === null) return obj;
     let result = Array.isArray(obj) ? [] : {};
     for (let key in obj) {
-        let newKey = key.replace(/[:].*$/, ''); // 去掉冒号和类型
+        let newKey = key.replace(/[:].*$/, '');
         result[newKey] = flattenKeys(obj[key]);
     }
     return result;
 }
 $httpClient.get(preLoading, (error, response, data) => {
     if (error) {
-        console.log('Router access faild:', error);
-        $done();
+        console.log('Router access denied:', error);
+        $done({
+                title: "Samsung 5G Mobile Wi-Fi",
+                content: `Wi-Fi Disconnected`,
+                icon: "wifi",
+                "icon-color": "#41b9ffff"
+            });
         return;
     }
     const postHeaders = {
