@@ -72,7 +72,7 @@ $httpClient.get(preLoading, (error, response, data) => {
         let signalInfo = `${signalStrength} (${signalPercent}%)`;
         $done({
                 title: "Samsung 5G Mobile Wi-Fi",
-                content: `📶Signal: ${signalInfo}\n📅Month: ${monthUsage}\n🗓3-Day: ${threeDayUsage}`,
+                content: `Signal: ${signalInfo}\nMonth: ${monthUsage}\n3-Day: ${threeDayUsage}`,
                 icon: "wifi",
                 "icon-color": "#006afeff"
             });

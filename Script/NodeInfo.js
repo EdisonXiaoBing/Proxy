@@ -11,7 +11,7 @@ $httpClient.get(url, function(error, response, data){
 const params = getParams($argument);
   body = {
     title: "Node Info",
-    content: `🗺️IP：${query}\n🖥️ISP：${isp}\n#️⃣ASN：${as}\n🌍Region：${emoji}${country}\n🏙City：${city}\n🕗Time Zone：${timezone}`,
+    content: `IP: ${query}\nISP: ${isp}\nASN: ${as}\nRegion: ${emoji}${country}\nCity: ${city}\nTime Zone: ${timezone}`,
         icon: params.icon,
         "icon-color": params.color
   }
