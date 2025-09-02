@@ -18,7 +18,7 @@ $httpClient.get(preLoading, (error, response, data) => {
                 title: "Samsung 5G Mobile Wi-Fi",
                 content: `Wi-Fi Disconnected`,
                 icon: "wifi",
-                "icon-color": "#006afeff"
+                "icon-color": "#21AEFF"
             });
         return;
     }
@@ -74,7 +74,7 @@ $httpClient.get(preLoading, (error, response, data) => {
                 title: "Samsung 5G Mobile Wi-Fi",
                 content: `Signal: ${signalInfo}\nMonth: ${monthUsage}\n3-Day: ${threeDayUsage}`,
                 icon: "wifi",
-                "icon-color": "#006afeff"
+                "icon-color": "#21AEFF"
             });
         $done();
     });
